@@ -1,6 +1,5 @@
 import { Button, HStack, Image, Input, StackDivider, Text, VStack, useToast, IconButton } from '@chakra-ui/react';
 import { useEffect, useState } from 'react'
-import DeleteTask from './DeleteTask';
 import img from '../images/todolist.svg';
 import supabase from '../supabase-client';
 import { FiTrash2 } from 'react-icons/fi';

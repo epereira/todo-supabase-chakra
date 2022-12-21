@@ -1,5 +1,4 @@
 import { Heading, VStack } from "@chakra-ui/react";
-import AddTask from "./components/AddTask";
 import TaskList from "./components/TaskList";
 
 function App() {
