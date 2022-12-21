@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import { Heading, VStack } from "@chakra-ui/react";
+import AddTask from "./components/AddTask";
+import TaskList from "./components/TaskList";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+      <VStack p={4} minH="100vh" bg="gray.100">
+        <Heading 
+          mt="20"
+          p="5"
+          fontWeight="extrabold"
+          size="2xl"
+          bgGradient="linear(to-l, #7928CA,#FF0080)"
+          bgClip="text"
+          >TODO LIST
+        </Heading>
+        <TaskList />
+      </VStack>
   );
 }
 
